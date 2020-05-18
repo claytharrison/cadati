@@ -19,11 +19,12 @@ The cadati package provides CAlender, DAte and TIme functions.
 Citation
 ========
 
-- not available yet
+.. image:: https://zenodo.org/badge/264928989.svg
+   :target: https://zenodo.org/badge/latestdoi/264928989
 
 If you use the software in a publication then please cite it using the Zenodo DOI. Be aware that this badge links to the latest package version.
 
-Please select your specific version at - to get the DOI of that version. You should normally always use the DOI for the specific version of your record in citations. This is to ensure that other researchers can access the exact research artefact you used for reproducibility.
+Please select your specific version at https://doi.org/10.5281/zenodo.3832082 to get the DOI of that version. You should normally always use the DOI for the specific version of your record in citations. This is to ensure that other researchers can access the exact research artefact you used for reproducibility.
 
 You can find additional information regarding DOI versioning at http://help.zenodo.org/#versioning
 
