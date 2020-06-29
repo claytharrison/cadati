@@ -2,8 +2,8 @@
 Changelog
 =========
 
-Unreleased
-==========
+Version 0.0.2
+=============
 
 - Add dekad module (from pytesmo)
 
