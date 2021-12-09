@@ -41,9 +41,9 @@ def doy(month, day, year=None):
     if year is not None:
         nonleap_years = np.invert(is_leap_year(year))
         day_of_year = (day_of_year -
-                       nonleap_years.astype('int') +
+                       nonleap_years.astype(np.int64) +
                        np.logical_and(
-                           day_of_year < 60, nonleap_years).astype('int'))
+                           day_of_year < 60, nonleap_years).astype(np.int64))
 
     return day_of_year
 

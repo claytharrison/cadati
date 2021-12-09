@@ -34,7 +34,7 @@ def cal2dt(cal_dt):
         numpy datetime64 array.
     """
     nonleap_years = np.invert(is_leap_year(cal_dt[..., 0]))
-    md = days_past[cal_dt[..., 1].astype(np.int)-1]
+    md = days_past[cal_dt[..., 1].astype(np.int64)-1]
 
     rel_days = cal_dt[..., 2]*24*3600*1e3 + cal_dt[..., 3]*3600*1e3 \
         + cal_dt[..., 4]*60*1e3 + cal_dt[..., 5] * 1e3 + cal_dt[..., 6]
