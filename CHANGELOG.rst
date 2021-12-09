@@ -2,6 +2,11 @@
 Changelog
 =========
 
+Version 0.0.3
+=============
+
+- Fix numpy warning
+
 Version 0.0.2
 =============
 
