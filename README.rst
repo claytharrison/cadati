@@ -5,6 +5,9 @@ cadati
 .. image:: https://github.com/TUW-GEO/cadati/workflows/ubuntu/badge.svg
    :target: https://github.com/TUW-GEO/cadati/actions/workflows/ubuntu.yml
 
+.. image:: https://github.com/TUW-GEO/cadati/workflows/windows/badge.svg
+   :target: https://github.com/TUW-GEO/cadati/actions/workflows/windows.yml
+
 .. image:: https://coveralls.io/repos/github/TUW-GEO/cadati/badge.svg?branch=master
    :target: https://coveralls.io/github/TUW-GEO/cadati?branch=master
 
