@@ -2,8 +2,8 @@
 cadati
 ======
 
-.. image:: https://travis-ci.org/TUW-GEO/cadati.svg?branch=master
-    :target: https://travis-ci.org/TUW-GEO/cadati
+.. image:: https://github.com/TUW-GEO/cadati/workflows/ubuntu/badge.svg
+   :target: https://github.com/TUW-GEO/cadati/actions/workflows/ubuntu.yml
 
 .. image:: https://coveralls.io/repos/github/TUW-GEO/cadati/badge.svg?branch=master
    :target: https://coveralls.io/github/TUW-GEO/cadati?branch=master
