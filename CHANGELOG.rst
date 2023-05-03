@@ -2,6 +2,11 @@
 Changelog
 =========
 
+Version 0.0.4
+=============
+
+- Add days2dt and dt2days conversion function
+
 Version 0.0.3
 =============
 
