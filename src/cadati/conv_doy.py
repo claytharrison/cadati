@@ -1,4 +1,4 @@
-# Copyright (c) 2020, TU Wien, Department of Geodesy and Geoinformation
+# Copyright (c) 2023, TU Wien, Department of Geodesy and Geoinformation
 # Distributed under the MIT License (see LICENSE.txt)
 
 """
