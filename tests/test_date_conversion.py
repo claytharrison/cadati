@@ -13,7 +13,7 @@ import pandas as pd
 import numpy.testing as nptest
 
 from cadati.cal_date import cal2jd, cal2dt
-from cadati.np_date import dt2cal, dt2jd
+from cadati.np_date import dt2cal, dt2jd, days2dt, dt2days
 from cadati.jd_date import jd2cal, jd2dt, jd2doy
 from cadati.jd_date import julian2datetime, julian2date, julday, caldat
 
@@ -247,6 +247,40 @@ def test_julian2datetime_array():
 
     assert type(dt) == np.ndarray
     assert np.all(dt == dt_should)
+
+def test_dt2days():
+    """
+    Test dt2days conversion.
+    """
+    dt = np.datetime64("2021-02-02 02:54:32.511")
+
+    assert dt == days2dt(dt2days(dt))
+
+def test_dt2days_array():
+    """
+    Test dt2days array conversion.
+    """
+    dt = np.arange('2021-09-24 08:00:00',
+                   '2021-09-24 11:20:00',
+                    np.timedelta64(20,'m'), dtype='datetime64')
+
+    assert np.all(dt == days2dt(dt2days(dt)))
+
+def test_days2dt():
+    """
+    Test days2dt conversion.
+    """
+    days = 44227.12121
+
+    assert days == dt2days(days2dt(days))
+
+def test_days2dt_array():
+    """
+    Test dt2days and days2dt conversion.
+    """
+    days = 44227.12121 + np.arange(10)
+
+    assert np.all(days == dt2days(days2dt(days)))
 
 
 if __name__ == '__main__':

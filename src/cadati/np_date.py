@@ -111,6 +111,8 @@ def days2dt(days, dt_ref=np.datetime64("1900-01-01 00:00:00")):
     dt : numpy.datetime64
         Dates.
     """
+    days = np.asarray(days)
+
     dt = (dt_ref + (days * 24. * 3600 * 1e6).astype("timedelta64[us]") +
           np.timedelta64(500, "us")).astype("datetime64[ms]")
 
